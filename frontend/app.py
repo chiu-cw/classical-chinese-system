@@ -7,7 +7,7 @@ st.set_page_config(page_title="古文微服務系統", page_icon="📜", layout=
 st.title("📜 文言文翻譯")
 st.write("本系統翻譯、作者與賞析由獨立 API 服務提供運作。")
 
-backend_url = st.sidebar.text_input("FastAPI 後端網址：", value="http://127.0.0.1:8000")
+backend_url = st.sidebar.text_input("FastAPI 後端網址：", value="https://classical-chinese-system.onrender.com")
 
 user_input = st.text_area("請輸入文言文段落：", height=150, placeholder="例如：晉太元中，武陵人捕魚為業...")
 
