@@ -2,7 +2,7 @@
 import streamlit as st
 import requests
 
-st.set_page_config(page_title="古文翻譯系統", page_icon="📜", layout="wide")
+st.set_page_config(page_title="文言文翻譯系統", page_icon="📜", layout="wide")
 
 st.title("📜 文言文翻譯")
 st.write("本系統翻譯、作者與賞析由獨立 API 服務提供運作。")
