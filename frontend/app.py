@@ -2,13 +2,13 @@
 import streamlit as st
 import requests
 
-st.set_page_config(page_title="古文微服務系統", page_icon="📜", layout="wide")
+st.set_page_config(page_title="古文翻譯系統", page_icon="📜", layout="wide")
 
 st.title("📜 文言文翻譯")
 st.write("本系統翻譯、作者與賞析由獨立 API 服務提供運作。")
 
+# 💡 把 value 的部分徹底改成你的雲端網址（注意：一樣結尾不要加斜線 / 喔）
 backend_url = st.sidebar.text_input("FastAPI 後端網址：", value="https://classical-chinese-system.onrender.com")
-
 user_input = st.text_area("請輸入文言文段落：", height=150, placeholder="例如：晉太元中，武陵人捕魚為業...")
 
 # 畫出三個並排的漂亮按鈕，對應後端的三個獨立 Endpoints
